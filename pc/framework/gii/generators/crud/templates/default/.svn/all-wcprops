@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/gii/generators/crud/templates/default
+END
+_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/gii/generators/crud/templates/default/_search.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/gii/generators/crud/templates/default/update.php
+END
+controller.php
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/gii/generators/crud/templates/default/controller.php
+END
+create.php
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/gii/generators/crud/templates/default/create.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/gii/generators/crud/templates/default/admin.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/gii/generators/crud/templates/default/index.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/gii/generators/crud/templates/default/_form.php
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/gii/generators/crud/templates/default/_view.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/gii/generators/crud/templates/default/view.php
+END

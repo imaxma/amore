@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/oci
+END
+COciColumnSchema.php
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/oci/COciColumnSchema.php
+END
+COciTableSchema.php
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/oci/COciTableSchema.php
+END
+COciCommandBuilder.php
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/oci/COciCommandBuilder.php
+END
+COciSchema.php
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/oci/COciSchema.php
+END

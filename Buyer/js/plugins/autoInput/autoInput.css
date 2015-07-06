@@ -1,0 +1,22 @@
+.autoInputBox{
+	display:block;
+	position: absolute;
+	z-index:100;
+	border:1px solid #ccc;
+	background: #fff;
+	display:none;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.autoInputBox p{	
+	padding:0 5px;
+	height:30px;
+	line-height: 30px;
+	color:#000;
+	cursor: pointer;
+	font-size: 12px;;
+}
+.autoInputBox p:active , .autoInputBox p:hover{
+	background: #4ba0e5;
+	color:#fff;
+}

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/mssql
+END
+CMssqlSchema.php
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/mssql/CMssqlSchema.php
+END
+CMssqlPdoAdapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/mssql/CMssqlPdoAdapter.php
+END
+CMssqlTableSchema.php
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/mssql/CMssqlTableSchema.php
+END
+CMssqlColumnSchema.php
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/mssql/CMssqlColumnSchema.php
+END
+CMssqlSqlsrvPdoAdapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/mssql/CMssqlSqlsrvPdoAdapter.php
+END
+CMssqlCommandBuilder.php
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/db/schema/mssql/CMssqlCommandBuilder.php
+END

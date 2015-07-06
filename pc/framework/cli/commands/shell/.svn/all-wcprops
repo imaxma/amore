@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/cli/commands/shell
+END
+FormCommand.php
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/cli/commands/shell/FormCommand.php
+END
+HelpCommand.php
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/cli/commands/shell/HelpCommand.php
+END
+CrudCommand.php
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/cli/commands/shell/CrudCommand.php
+END
+ControllerCommand.php
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/cli/commands/shell/ControllerCommand.php
+END
+ModuleCommand.php
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/cli/commands/shell/ModuleCommand.php
+END
+ModelCommand.php
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/cli/commands/shell/ModelCommand.php
+END

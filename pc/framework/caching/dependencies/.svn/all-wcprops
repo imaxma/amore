@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/caching/dependencies
+END
+CExpressionDependency.php
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/caching/dependencies/CExpressionDependency.php
+END
+CCacheDependency.php
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/caching/dependencies/CCacheDependency.php
+END
+CDbCacheDependency.php
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/caching/dependencies/CDbCacheDependency.php
+END
+CFileCacheDependency.php
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/caching/dependencies/CFileCacheDependency.php
+END
+CChainedCacheDependency.php
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/caching/dependencies/CChainedCacheDependency.php
+END
+CGlobalStateCacheDependency.php
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/caching/dependencies/CGlobalStateCacheDependency.php
+END
+CDirectoryCacheDependency.php
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/svn/juevent/!svn/ver/22/%E6%8A%80%E6%9C%AF%E9%83%A8/%E8%BF%87%E7%A8%8B%E5%9F%9F/03%E5%AE%9E%E7%8E%B0/%E5%BC%80%E5%8F%91%E6%BA%90%E7%A0%81/trunk/ju/framework/caching/dependencies/CDirectoryCacheDependency.php
+END

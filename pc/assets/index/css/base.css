@@ -1,0 +1,11 @@
+.addcustoms {  margin: 0px auto; overflow: hidden; padding: 20px;}
+#customs, #operator, #company {display: none;}
+
+#company { width: 520px; height:400px; margin:0px auto;}
+
+.pager .next > a, .pager .next > span {
+    float: none !important;
+}
+.pager .previous > a, .pager .previous > span {
+    float: none !important;
+}
