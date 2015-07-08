@@ -154,6 +154,9 @@ angular.module('starter.services', [])
 .factory("$editPassword",function($http){
     return {
         edit:function(param,callback){
+        	param.password = hex_md5( param.password );
+		    param.new_password = hex_md5( param.new_password );
+			param.confrim_password = null; 
             loading("show","正在修改...");
             var url = "../customs/changepassword.php";
             var http = $http.post(url,param) ;

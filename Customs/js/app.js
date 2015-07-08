@@ -31,7 +31,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',"i
     .state('user', {
     url: "/user",
     abstract: true,
-    templateUrl: "templates/tabs.html",
+    templateUrl: "templates/tabs.php",
     controller:"user"
   })
   .state('user.index', {
@@ -47,7 +47,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',"i
       url: '/search_gys',
       views: {
           'tab-index': {
-              templateUrl: 'templates/s-search-gys.html',
+              templateUrl: 'templates/s-search-gys.php',
               controller: 'search_gys'
           }
       }
@@ -56,7 +56,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',"i
       url: '/search_order/:type',
       views: {
           'tab-index': {
-              templateUrl: 'templates/s-search-order.html',
+              templateUrl: 'templates/s-search-order.php',
               controller: 'search_order'
           }
       }
@@ -65,7 +65,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',"i
       url: '/search_wl',
       views: {
           'tab-index': {
-              templateUrl: 'templates/s-search-wl.html',
+              templateUrl: 'templates/s-search-wl.php',
               controller: 'search_wl'
           }
       }

@@ -209,15 +209,13 @@ function($scope,$LoginService,$state,$rootScope,$editPassword,$ionicPopup){
 		          	return ;
 		          }
 		          
-		          $scope.edit.password = hex_md5( $scope.edit.password );
-		          $scope.edit.new_password = hex_md5( $scope.edit.new_password );
 		          $editPassword.edit($scope.edit,function(data){
 		          	if( data.ret == "success" ){
 		          		document.getElementById("password").value = "" ; // 清空密码输入框
-						$scope.reset();
 		          		alertBox("密码修改成功");
 					}else if( data.ret == "error" ){
-		          		alertBox(data.reason);
+						alertBox(data.reason);
+						e.preventDefault(); //阻止弹层关闭
 		          	}else{
 		          		alertBox("密码修改失败");
 		          		e.preventDefault(); //阻止弹层关闭
@@ -227,6 +225,9 @@ function($scope,$LoginService,$state,$rootScope,$editPassword,$ionicPopup){
 		        }
 		      }
 		    ]
+		  });
+		  myPopup.then(function(res) {
+		    $scope.edit = {} ;
 		  });
       }
 }])

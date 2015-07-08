@@ -625,6 +625,14 @@ a:hover , a:active{
     display:inline-block;
     width:50%;
 }
+.deliveryList .de_68{
+	display:inline-block;
+    width:68%;
+}
+.deliveryList .de_32{
+	display:inline-block;
+    width:32%;
+}
 .deliveryList:hover , .deliveryList{
     color:#000;
 }
@@ -988,10 +996,14 @@ select option{
 	border:1px solid #DDDDDD;
 	height:48px;
 }
+
 .findPasswordForm .row > span{
 	width:65px;
 	text-align:right;
+	display:inline-block;
+	float: none;
 }
 .findPasswordForm .row > input{
 	width:142px;
+	float: none;
 }

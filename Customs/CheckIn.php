@@ -24,7 +24,7 @@ require('../functions.php');
 	if($result && $row = mysql_fetch_array($result)) {
 		$Password=$row["Password"];
 		$User = $_POST["username"];
-
+			
 		if((md5($Password) === $_POST["password"]) || ($Password === $_POST["password"])) {
 			
 			//判断所在公司是否在合同期

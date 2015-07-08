@@ -12,11 +12,11 @@ require('../functions.php');
 		$_POST["newpassword"] = $jsonD->new_password;
 	}
 	///
-	echo $_POST["password"]."   ";
-	echo $_POST["newpassword"]."   ";
+	//echo $_POST["password"]."   ";
+	//echo $_POST["newpassword"]."   ";
 	if (!isset($_POST["username"]) || !isset($_POST["newpassword"]) || !isset($_POST["password"])) { exit(ReturnError(false, array("reason"=>"参数错误"))); };
 		
-	$querySQL="SELECT Id, CustomsID, Password FROM data_customs_operator WHERE name='".strtolower($_POST["username"])."' OR phone='".strtolower($_POST["username"])."' LIMIT 1";
+	$querySQL="SELECT Id, CustomsID, Password FROM data_customs_operator WHERE name='".strtolower($_POST["username"])."' OR phone='".$_POST["username"]."' LIMIT 1";
 		
 	//echo $querySQL;
 	$result=mysql_query($querySQL); 
@@ -27,7 +27,7 @@ require('../functions.php');
 			mysql_query("UPDATE data_customs_operator SET Password='".$_POST["newpassword"]."' WHERE id=".$row['Id']." LIMIT 1");
 			
 			if(mysql_affected_rows() == 0) {
-				exit(ReturnError(false, array("reason"=>"失败")));
+				exit(ReturnError(false, array("reason"=>"修改失败")));
 			} else {
 				exit(ReturnError(true));
 			}
