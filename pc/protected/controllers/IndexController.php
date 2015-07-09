@@ -502,6 +502,33 @@ class IndexController extends ModulesController
             $model = CustomsCom::model();
             $model = $model->findByPk($_POST['id']);
             $model->ContractEnd = date('Y-m-d H:i:s',strtotime($_POST['date'])+86399);
+			$model->Alerts = 0;
+            if ($model->update())
+            {
+                echo 'success';
+            }
+            else
+            {
+                echo 'error';
+            }
+        }
+        else
+        {
+            echo 'error';
+        }
+    }
+	
+	/*
+     * 修改供应商合同开始日期
+     */
+    public function actionUpdateCompanyStart()
+    {
+        if (isset($_POST['id']) && !empty($_POST['id']) && isset($_POST['date']) && !empty($_POST['date']))
+        {
+            $model = CustomsCom::model();
+            $model = $model->findByPk($_POST['id']);
+            $model->ContractStart = date('Y-m-d H:i:s',strtotime($_POST['date']));
+			$model->Alerts = 0;
             if ($model->update())
             {
                 echo 'success';

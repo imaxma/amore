@@ -40,10 +40,12 @@ class Controller extends CController
     public function create_password($pw_length)
     {
         $randpwd = '';
-        for ($i = 0; $i < $pw_length; $i++)
+        /*for ($i = 0; $i < $pw_length; $i++)
         {
             $randpwd .= chr(mt_rand(33, 126));
-        }
+        }*/
+		//暂时统一一个初始密码即可
+		$randpwd="123";
         return $randpwd;
             // 调用该函数，传递长度参数$pw_length = 6
         //echo create_password(6);
@@ -102,9 +104,9 @@ class Controller extends CController
     function GetStandardDays($Type, $Step) {
         $Standard = array
         (
-            "full"=>array("DE"=>2, "AFE"=>1, "DI"=>1, "TAX"=>0.5, "Customs"=>1, "Inspection"=>1, "Warehouse"=>0, "total"=>6.5),
-            "air"=>array("DE"=>1, "AFE"=>1, "DI"=>0, "TAX"=>0.5, "Customs"=>1, "Inspection"=>1, "Warehouse"=>0, "total"=>4.5),
-            "bulk"=>array("DE"=>3, "AFE"=>1, "DI"=>1, "TAX"=>0.5, "Customs"=>1, "Inspection"=>1, "Warehouse"=>0, "total"=>7.5)
+            "full"=>array("DE"=>2, "AFE"=>1, "DI"=>1, "TAX"=>0, "Customs"=>1, "Inspection"=>1, "Warehouse"=>0, "total"=>6),
+            "air"=>array("DE"=>1, "AFE"=>1, "DI"=>1, "TAX"=>0, "Customs"=>1, "Inspection"=>1, "Warehouse"=>0, "total"=>5),
+            "bulk"=>array("DE"=>3, "AFE"=>1, "DI"=>1, "TAX"=>0, "Customs"=>1, "Inspection"=>1, "Warehouse"=>0, "total"=>7)
         );
 
         return $Standard[$Type][$Step];
@@ -223,6 +225,86 @@ class Controller extends CController
         return json_encode($result);
         //return str_replace("\\/", "/", json_encode($result));
     }
+	
+	//查看合同多久后到期，并提醒
+	function ContractAlerts() {
+		$AlertGroup=array();
+		$querySQL = "SELECT Id, ContractStart, ContractEnd, Name, Alerts FROM data_customs_com WHERE 1";
+		$result = mysql_query($querySQL);
+		if($result) {
+			while($row = mysql_fetch_array($result)) {
+				$TimeLeft = strtotime($row["ContractEnd"]) - strtotime(Date("Y-m-d H:i:s"));
+				if($TimeLeft>60*24*3600 && $TimeLeft<90*24*3600){				//前三个月 第一次
+					if(strpos($row["Alerts"], '3M1') !== true) {
+						$Alert['contents'] = $row["Name"]."的合同距离到期不足三个月!";
+					}
+				} else if($TimeLeft>45*24*3600 && $TimeLeft<60*24*3600) {		//前两个月 第一次
+					if(strpos($row["Alerts"], '2M1') !== true) {
+						$Alert['contents'] = $row["Name"]."的合同距离到期不足两个月!";
+					}
+				} else if($TimeLeft>30*24*3600 && $TimeLeft<45*24*3600) {		//前两个月 第二次
+					if(strpos($row["Alerts"], '2M2') !== true) {
+						$Alert['contents'] = $row["Name"]."的合同距离到期不足两个月!";
+					}
+				} else if($TimeLeft>21*24*3600 && $TimeLeft<30*24*3600) {		//前一个月 第一次
+					if(strpos($row["Alerts"], '1M1') !== true) {
+						$Alert['contents'] = $row["Name"]."的合同距离到期不足一个月!";
+					}
+				} else if($TimeLeft>14*24*3600 && $TimeLeft<21*24*3600) {		//前一个月 第二次
+					if(strpos($row["Alerts"], '1M2') !== true) {
+						$Alert['contents'] = $row["Name"]."的合同距离到期不足一个月!";
+					}
+				} else if($TimeLeft>7*24*3600 && $TimeLeft<14*24*3600) {		//前一个月 第三次
+					if(strpos($row["Alerts"], '1M3') !== true) {
+						$Alert['contents'] = $row["Name"]."的合同距离到期不足两周!";
+					}
+				} else if($TimeLeft>0 && $TimeLeft<7*24*3600) {					//前一个月 第四次
+					if(strpos($row["Alerts"], '1M4') !== true) {
+						$Alert['contents'] = $row["Name"]."的合同距离到期不足一周!(最后一次提醒)";
+					}
+				} else {
+					$Alert['contents'] = "";
+				}
+				
+				if(!empty($Alert['contents'])) {
+					$Alert['com_id']=$row["Id"];
+					$AlertGroup[]=$Alert;
+				}
+			}
+		}
+		
+		return json_encode($AlertGroup);
+	}
+	
+	//提醒已被确认
+	function AlertDone($Id) {
+		$querySQL = "SELECT ContractStart, ContractEnd, Alerts FROM data_customs_com WHERE id=$Id LIMIT 1";
+		$result = mysql_query($querySQL);
+		if($result) {
+			while($row = mysql_fetch_array($result)) {
+				$TimeLeft = strtotime($row["ContractEnd"]) - strtotime(Date("Y-m-d H:i:s"));
+				if($TimeLeft>60*24*3600 && $TimeLeft<90*24*3600){				//前三个月 第一次
+					$AlertType = 1;// "'3M1'";
+				} else if($TimeLeft>45*24*3600 && $TimeLeft<60*24*3600) {		//前两个月 第一次
+					$AlertType = 2;//"'2M1'";
+				} else if($TimeLeft>30*24*3600 && $TimeLeft<45*24*3600) {		//前两个月 第二次
+					$AlertType = 4;//"'2M2'";
+				} else if($TimeLeft>21*24*3600 && $TimeLeft<30*24*3600) {		//前一个月 第一次
+					$AlertType = 8;//"'1M1'";
+				} else if($TimeLeft>14*24*3600 && $TimeLeft<21*24*3600) {		//前一个月 第二次
+					$AlertType = 16;//"'1M2'";
+				} else if($TimeLeft>7*24*3600 && $TimeLeft<14*24*3600) {		//前一个月 第三次
+					$AlertType = 32;//"'1M3'";
+				} else if($TimeLeft>0 && $TimeLeft<7*24*3600) {					//前一个月 第四次
+					$AlertType = 64;//"'1M4'";
+				}
+				
+				if(!empty($AlertType)) {
+					mysql_query("UPDATE data_customs_com SET Alerts=Alerts|".$AlertType." WHERE id=$Id");
+				}
+			}
+		}
+	}
 	
 	
 }
